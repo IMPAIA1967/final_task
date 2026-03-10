@@ -12,5 +12,7 @@ class NetworkViewSet(viewsets.ModelViewSet):
     serializer_class = NetworkSerializer
     # Права доступа только для сотрудников
     permission_classes = [IsAdminUser]
+    # Фиотрация по стране
+    filterset_fields = ['country']
 
 
