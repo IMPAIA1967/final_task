@@ -27,4 +27,3 @@ class NetworkSerializer(serializers.ModelSerializer):
             'debt',
             'created_at'
         ]
-

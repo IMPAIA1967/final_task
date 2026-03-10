@@ -2,7 +2,6 @@ from django.contrib import admin
 from network.models import Network
 
 
-
 @admin.register(Network)
 class NetworkAdmin(admin.ModelAdmin):
     # Поля, которые показываются в списке
@@ -18,7 +17,3 @@ class NetworkAdmin(admin.ModelAdmin):
 
     # Название действия в админке
     clear_debt.short_description = 'Очистить задолженность'
-
-
-
-

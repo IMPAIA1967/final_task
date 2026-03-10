@@ -1,4 +1,4 @@
-from rest_framework import viewsets, permissions
+from rest_framework import viewsets
 from rest_framework.permissions import IsAdminUser
 
 from network.models import Network
@@ -14,5 +14,3 @@ class NetworkViewSet(viewsets.ModelViewSet):
     permission_classes = [IsAdminUser]
     # Фиотрация по стране
     filterset_fields = ['country']
-
-
