@@ -1,4 +1,6 @@
 from rest_framework import viewsets, permissions
+from rest_framework.permissions import IsAdminUser
+
 from network.models import Network
 from network.serializers import NetworkSerializer
 
@@ -9,5 +11,6 @@ class NetworkViewSet(viewsets.ModelViewSet):
     # Какой сериализатор использовать
     serializer_class = NetworkSerializer
     # Права доступа только для сотрудников
-    permission_classes = []
+    permission_classes = [IsAdminUser]
+
 
